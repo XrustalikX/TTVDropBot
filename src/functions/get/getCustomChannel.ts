@@ -13,7 +13,7 @@ export async function getCustomChannel() {
     if (!userdata.settings.displayless) {
 
         if(fs.existsSync(path)) {
-            let customch = fs.readFileSync('./CustomChannels.json', 'utf8');
+            let customch = fs.readFileSync('../../CustomChannels.json', 'utf8');
             userdata.customchannel = JSON.parse(customch);
 
             //Check Drops Amount...
@@ -56,7 +56,7 @@ export async function getCustomChannel() {
     } else {
         const path = './CustomChannels.json'
         if (fs.existsSync(path)) {
-            let customch = fs.readFileSync('./CustomChannels.json', 'utf8');
+            let customch = fs.readFileSync('../../CustomChannels.json', 'utf8');
             userdata.customchannel = JSON.parse(customch);
             //Check Drops Amount...
             if (userdata.customchannel.length === 0) {
