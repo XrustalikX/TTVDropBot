@@ -8,7 +8,7 @@ const inquirer = require("inquirer");
 const TwitchGQL = require("@zaarrg/twitch-gql-ttvdropbot").Init();
 
 export async function getCustomChannel() {
-    const path = './CustomChannels.json'
+    const path = '../../CustomChannels.json'
 
     if (!userdata.settings.displayless) {
 
